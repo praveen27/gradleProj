@@ -14,9 +14,14 @@ public class HelloWorldUnitTest {
     }
 
     @Test
-    public void firstTest(){
+    public void firstTest() {
         System.out.println("Running unit test firstTest");
         System.out.println(helloWorld.printMe("firstTest"));
+    }
+
+    @Test (expected = RuntimeException.class)
+    public void expectAnException(){
+        System.out.println(helloWorld.printMe(null));
     }
 
 }
