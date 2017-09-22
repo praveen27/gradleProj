@@ -1,0 +1,2 @@
+# gradleProj
+Sample gradle project
